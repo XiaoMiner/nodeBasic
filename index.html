@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="./jquery.js"></script>
+<body>
+
+</body>
+<script>
+    const url = 'testPage/testThree';
+    $.ajax({
+        url: 'http://127.0.0.1:9080/'+ url,
+        type: 'post',
+        data: {
+            testThree: 1
+        },
+        success(resData){
+            console.log(resData);
+        },
+        error(error){
+            console.log(error);
+        }
+    });
+</script>
+</html>
